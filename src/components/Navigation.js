@@ -28,8 +28,8 @@ export default class Navigation extends React.Component {
                 onChange={(event, value) => this.onChangeHandler(value)}
                 showLabels
             >
-                <BottomNavigationAction label="Progreso" component={Link} to="/progress" icon={<TrendingUpIcon />} />
-                <BottomNavigationAction label="Datos" component={Link} to="/inputs" icon={<EditAttributesIcon />} />
+                <BottomNavigationAction label="Progreso" value="/" component={Link} to="/" icon={<TrendingUpIcon />} />
+                <BottomNavigationAction label="Datos" value="/inputs" component={Link} to="/inputs" icon={<EditAttributesIcon />} />
             </BottomNavigation>
         );
     }

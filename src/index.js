@@ -11,7 +11,7 @@ import {
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 
 import MomentUtils from '@date-io/moment';
-import "moment/locale/es";
+import 'moment/locale/es';
 import moment from 'moment';
 
 // Routes
@@ -21,12 +21,12 @@ import { Progress, Inputs } from './routes'
 import Navigation from './components/Navigation';
 
 ReactDOM.render(
-  <MuiPickersUtilsProvider utils={MomentUtils} locale={moment.locale("es")}>
+  <MuiPickersUtilsProvider utils={MomentUtils} locale={moment.locale('es')}>
     <Router>
       <Switch>
         <Navigation />
-        <Route path='/progress' component={Progress} />
-        <Route path='/inputs' component={Inputs} />
+        <Route path='/'><Progress /></Route>
+        <Route path='/inputs'><Inputs /></Route>
       </Switch>
     </Router>
   </MuiPickersUtilsProvider>,
